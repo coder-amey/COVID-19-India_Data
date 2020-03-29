@@ -1,4 +1,4 @@
-'''This script scrapes the home page of the MoHFW, Govt. of India for latest updates for COVID-data and stores the last tally in a CSV file with the corresponding date in the filename. It also updates the time-series dataset with the latest available data and regenerates the corresponding CSV and JSON files.'''
+'''This script scrapes the home page of the MoHFW, Govt. of India, for updates on COVID-19 data and stores the latest tally in a CSV file with the corresponding date in the filename. It also updates the time-series dataset and regenerates the corresponding CSV file.'''
 
 import pandas as data
 import numpy as maths
