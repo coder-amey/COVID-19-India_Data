@@ -1,5 +1,5 @@
 # COVID-19-India_Data
-##Data regarding region-wise spread of COVID-19 in India.
+## Data regarding region-wise spread of COVID-19 in India.
 
 ### Introduction:
 * This repository stores datasets pertaining to the daily update on the region-wise spread of COVID-19 in India.
