@@ -4,7 +4,7 @@
 ### Introduction:
 * This repository stores datasets pertaining to the daily update on the region-wise spread of COVID-19 in India.
 * The data are arranged into two directories: *datasets* and *time-series*.
-* I thank the **[MoHFW]**(https://www.mohfw.gov.in/) and **[@covid19india]**(https://github.com/covid19india) for providing a reliable source of raw data.
+* I thank the **[MoHFW](https://www.mohfw.gov.in/)** and **[@covid19india](https://github.com/covid19india)** for providing a reliable source of raw data.
 * I also thank each and every on-duty personnel on the frontlines of this battle against COVID-19. Let's help them by staying indoors.
 
 ### Functional Details:
@@ -15,8 +15,8 @@
 * The *COVID19-fetch_India_regional_historical_data.py* script extracts old historical data from the CovidCrowd repository on GitHub. This script was used once to load the old data that was not available on the MoHFW website.
 
 ### Sources:
-* The primary source of these data is the home page of the **[Ministry of Health & Family Welfare]**(https://www.mohfw.gov.in/), Govt. of India. Daily updates are retrieved from this source since 28th March, 2020.
-* Historical data before 28th March, 2020 have been extracted from the raw data available within the **[CovidCrowd]**(https://github.com/covid19india/CovidCrowd) repository of [@covid19india](https://github.com/covid19india).
+* The primary source of these data is the home page of the **[Ministry of Health & Family Welfare](https://www.mohfw.gov.in/)**, Govt. of India. Daily updates are retrieved from this source since 28th March, 2020.
+* Historical data before 28th March, 2020 have been extracted from the raw data available within the **[CovidCrowd](https://github.com/covid19india/CovidCrowd)** repository of [@covid19india](https://github.com/covid19india).
 * The datasets housed in this repository are a mixture of data from these two sources and have been forged into a uniform format.
 
 ### Licensing:
