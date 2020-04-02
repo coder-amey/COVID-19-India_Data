@@ -568,13 +568,13 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 01-04-2020,National Total,1637.0,133.0,38.0
 02-04-2020,Andhra Pradesh,86.0,1.0,1.0
 02-04-2020,Andaman and Nicobar Islands,10.0,0.0,0.0
-02-04-2020,Assam,1.0,0.0,0.0
-02-04-2020,Bihar,23.0,0.0,1.0
+02-04-2020,Assam,5.0,0.0,0.0
+02-04-2020,Bihar,24.0,0.0,1.0
 02-04-2020,Chandigarh,16.0,0.0,0.0
 02-04-2020,Chhattisgarh,9.0,2.0,0.0
-02-04-2020,Delhi,152.0,6.0,2.0
+02-04-2020,Delhi,219.0,8.0,4.0
 02-04-2020,Goa,5.0,0.0,0.0
-02-04-2020,Gujarat,82.0,5.0,6.0
+02-04-2020,Gujarat,87.0,8.0,7.0
 02-04-2020,Haryana,43.0,21.0,0.0
 02-04-2020,Himachal Pradesh,3.0,1.0,1.0
 02-04-2020,Jammu and Kashmir,62.0,2.0,2.0
@@ -591,8 +591,8 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 02-04-2020,Punjab,46.0,1.0,4.0
 02-04-2020,Rajasthan,108.0,3.0,0.0
 02-04-2020,Tamil Nadu,234.0,6.0,1.0
-02-04-2020,Telengana,96.0,1.0,3.0
+02-04-2020,Telengana,107.0,1.0,3.0
 02-04-2020,Uttarakhand,7.0,2.0,0.0
 02-04-2020,Uttar Pradesh,113.0,14.0,2.0
-02-04-2020,West Bengal,37.0,6.0,3.0
-02-04-2020,National Total,1965.0,151.0,50.0
+02-04-2020,West Bengal,53.0,6.0,3.0
+02-04-2020,National Total,2069.0,156.0,53.0
