@@ -2,7 +2,7 @@
 ## Data regarding region-wise spread of COVID-19 in India.
 
 ### Live Dashboard:
-These datasets have been beautifully visualized by **[@rahulrajpl](https://github.com/rahulrajpl)** on his **[dashboard]( http://randomwalk.in/covid19India/)**.
+* These datasets have been beautifully visualized by **[@rahulrajpl](https://github.com/rahulrajpl)** on his **[dashboard]( http://randomwalk.in/covid19India/)**.
 
 ### Introduction:
 * This repository stores datasets pertaining to the daily update on the region-wise spread of COVID-19 in India.
