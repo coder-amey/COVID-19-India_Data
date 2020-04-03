@@ -4,7 +4,7 @@ import pandas as data
 import numpy as maths
 from datetime import datetime
 
-rows = 29	#The number of rows to be fetched from the table (this may change).
+rows = 30		#The number of rows to be fetched from the table (this may change).
 date = datetime.now().strftime("%d-%m-%Y") #Date of update.
 
 #Scrape the HTML tables, load the last table, remove unwanted columns and rename and reformat the columns. Add the "National Total" row.
