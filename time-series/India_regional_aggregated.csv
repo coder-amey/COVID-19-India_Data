@@ -658,24 +658,24 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 04-04-2020,Uttar Pradesh,174.0,19.0,2.0
 04-04-2020,West Bengal,63.0,3.0,3.0
 04-04-2020,National Total,2902.0,184.0,68.0
-05-04-2020,Andhra Pradesh,161.0,1.0,1.0
+05-04-2020,Andhra Pradesh,190.0,1.0,1.0
 05-04-2020,Andaman and Nicobar Islands,10.0,0.0,0.0
 05-04-2020,Arunachal Pradesh,1.0,0.0,0.0
-05-04-2020,Assam,24.0,0.0,0.0
+05-04-2020,Assam,26.0,0.0,0.0
 05-04-2020,Bihar,30.0,0.0,1.0
 05-04-2020,Chandigarh,18.0,0.0,0.0
 05-04-2020,Chhattisgarh,9.0,3.0,0.0
-05-04-2020,Delhi,445.0,15.0,6.0
+05-04-2020,Delhi,503.0,18.0,7.0
 05-04-2020,Goa,7.0,0.0,0.0
-05-04-2020,Gujarat,105.0,14.0,10.0
-05-04-2020,Haryana,49.0,24.0,0.0
+05-04-2020,Gujarat,122.0,18.0,11.0
+05-04-2020,Haryana,59.0,25.0,1.0
 05-04-2020,Himachal Pradesh,6.0,1.0,1.0
-05-04-2020,Jammu and Kashmir,92.0,4.0,2.0
-05-04-2020,Jharkhand,2.0,0.0,0.0
+05-04-2020,Jammu and Kashmir,106.0,4.0,2.0
+05-04-2020,Jharkhand,3.0,0.0,0.0
 05-04-2020,Karnataka,144.0,12.0,4.0
 05-04-2020,Kerala,306.0,49.0,2.0
 05-04-2020,Ladakh,14.0,10.0,0.0
-05-04-2020,Madhya Pradesh,104.0,0.0,6.0
+05-04-2020,Madhya Pradesh,165.0,0.0,9.0
 05-04-2020,Maharashtra,490.0,42.0,24.0
 05-04-2020,Manipur,2.0,0.0,0.0
 05-04-2020,Mizoram,1.0,0.0,0.0
@@ -687,5 +687,5 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 05-04-2020,Telangana,269.0,32.0,7.0
 05-04-2020,Uttarakhand,22.0,2.0,0.0
 05-04-2020,Uttar Pradesh,227.0,19.0,2.0
-05-04-2020,West Bengal,69.0,10.0,3.0
-05-04-2020,National Total,3374.0,267.0,77.0
+05-04-2020,West Bengal,80.0,10.0,3.0
+05-04-2020,National Total,3577.0,275.0,83.0
