@@ -449,7 +449,7 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 28-03-2020,Punjab,38.0,1.0,1.0
 28-03-2020,Rajasthan,54.0,3.0,0.0
 28-03-2020,Tamil Nadu,40.0,2.0,1.0
-28-03-2020,Telengana,56.0,1.0,0.0
+28-03-2020,Telangana,56.0,1.0,0.0
 28-03-2020,Uttarakhand,5.0,0.0,0.0
 28-03-2020,Uttar Pradesh,55.0,11.0,0.0
 28-03-2020,West Bengal,15.0,0.0,1.0
@@ -477,7 +477,7 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 29-03-2020,Punjab,38.0,1.0,1.0
 29-03-2020,Rajasthan,54.0,3.0,0.0
 29-03-2020,Tamil Nadu,42.0,2.0,1.0
-29-03-2020,Telengana,66.0,1.0,1.0
+29-03-2020,Telangana,66.0,1.0,1.0
 29-03-2020,Uttarakhand,6.0,1.0,0.0
 29-03-2020,Uttar Pradesh,55.0,11.0,0.0
 29-03-2020,West Bengal,17.0,0.0,1.0
@@ -505,7 +505,7 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 30-03-2020,Punjab,38.0,1.0,1.0
 30-03-2020,Rajasthan,59.0,3.0,0.0
 30-03-2020,Tamil Nadu,67.0,4.0,1.0
-30-03-2020,Telengana,71.0,1.0,1.0
+30-03-2020,Telangana,71.0,1.0,1.0
 30-03-2020,Uttarakhand,7.0,2.0,0.0
 30-03-2020,Uttar Pradesh,82.0,11.0,0.0
 30-03-2020,West Bengal,22.0,0.0,1.0
@@ -533,7 +533,7 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 31-03-2020,Punjab,41.0,1.0,3.0
 31-03-2020,Rajasthan,74.0,3.0,0.0
 31-03-2020,Tamil Nadu,74.0,4.0,1.0
-31-03-2020,Telengana,79.0,1.0,1.0
+31-03-2020,Telangana,79.0,1.0,1.0
 31-03-2020,Uttarakhand,7.0,2.0,0.0
 31-03-2020,Uttar Pradesh,101.0,14.0,0.0
 31-03-2020,West Bengal,26.0,0.0,2.0
@@ -561,7 +561,7 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 01-04-2020,Punjab,41.0,1.0,3.0
 01-04-2020,Rajasthan,93.0,3.0,0.0
 01-04-2020,Tamil Nadu,124.0,4.0,1.0
-01-04-2020,Telengana,94.0,1.0,3.0
+01-04-2020,Telangana,94.0,1.0,3.0
 01-04-2020,Uttarakhand,7.0,2.0,0.0
 01-04-2020,Uttar Pradesh,103.0,14.0,0.0
 01-04-2020,West Bengal,26.0,0.0,2.0
@@ -591,7 +591,7 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 02-04-2020,Punjab,46.0,1.0,4.0
 02-04-2020,Rajasthan,108.0,3.0,0.0
 02-04-2020,Tamil Nadu,234.0,6.0,1.0
-02-04-2020,Telengana,107.0,1.0,3.0
+02-04-2020,Telangana,107.0,1.0,3.0
 02-04-2020,Uttarakhand,7.0,2.0,0.0
 02-04-2020,Uttar Pradesh,113.0,14.0,2.0
 02-04-2020,West Bengal,53.0,6.0,3.0
@@ -622,7 +622,7 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 03-04-2020,Punjab,46.0,1.0,4.0
 03-04-2020,Rajasthan,133.0,3.0,0.0
 03-04-2020,Tamil Nadu,309.0,6.0,1.0
-03-04-2020,Telengana,107.0,1.0,3.0
+03-04-2020,Telangana,107.0,1.0,3.0
 03-04-2020,Uttarakhand,10.0,2.0,0.0
 03-04-2020,Uttar Pradesh,113.0,14.0,2.0
 03-04-2020,West Bengal,53.0,3.0,3.0
@@ -653,8 +653,39 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 04-04-2020,Punjab,53.0,1.0,5.0
 04-04-2020,Rajasthan,179.0,3.0,0.0
 04-04-2020,Tamil Nadu,411.0,6.0,1.0
-04-04-2020,Telengana,158.0,1.0,7.0
+04-04-2020,Telangana,158.0,1.0,7.0
 04-04-2020,Uttarakhand,16.0,2.0,0.0
 04-04-2020,Uttar Pradesh,174.0,19.0,2.0
 04-04-2020,West Bengal,63.0,3.0,3.0
 04-04-2020,National Total,2902.0,184.0,68.0
+05-04-2020,Andhra Pradesh,161.0,1.0,1.0
+05-04-2020,Andaman and Nicobar Islands,10.0,0.0,0.0
+05-04-2020,Arunachal Pradesh,1.0,0.0,0.0
+05-04-2020,Assam,24.0,0.0,0.0
+05-04-2020,Bihar,30.0,0.0,1.0
+05-04-2020,Chandigarh,18.0,0.0,0.0
+05-04-2020,Chhattisgarh,9.0,3.0,0.0
+05-04-2020,Delhi,445.0,15.0,6.0
+05-04-2020,Goa,7.0,0.0,0.0
+05-04-2020,Gujarat,105.0,14.0,10.0
+05-04-2020,Haryana,49.0,24.0,0.0
+05-04-2020,Himachal Pradesh,6.0,1.0,1.0
+05-04-2020,Jammu and Kashmir,92.0,4.0,2.0
+05-04-2020,Jharkhand,2.0,0.0,0.0
+05-04-2020,Karnataka,144.0,12.0,4.0
+05-04-2020,Kerala,306.0,49.0,2.0
+05-04-2020,Ladakh,14.0,10.0,0.0
+05-04-2020,Madhya Pradesh,104.0,0.0,6.0
+05-04-2020,Maharashtra,490.0,42.0,24.0
+05-04-2020,Manipur,2.0,0.0,0.0
+05-04-2020,Mizoram,1.0,0.0,0.0
+05-04-2020,Odisha,20.0,0.0,0.0
+05-04-2020,Puducherry,5.0,1.0,0.0
+05-04-2020,Punjab,57.0,1.0,5.0
+05-04-2020,Rajasthan,200.0,21.0,0.0
+05-04-2020,Tamil Nadu,485.0,6.0,3.0
+05-04-2020,Telangana,269.0,32.0,7.0
+05-04-2020,Uttarakhand,22.0,2.0,0.0
+05-04-2020,Uttar Pradesh,227.0,19.0,2.0
+05-04-2020,West Bengal,69.0,10.0,3.0
+05-04-2020,National Total,3374.0,267.0,77.0
