@@ -27,9 +27,5 @@ time_series = data.read_csv("time-series/India_regional_aggregated.csv")		#Load 
 time_series = time_series[time_series["Date"] != date]	#Discard other updates made today.
 time_series = data.concat([time_series, updated_tally])
 
-#Correct the spelling error in "Telangana"
-time_series.loc[time_series.Region == "Telengana", "Region"] = "Telangana"
-
-
 #Rewrite the updated time-series to its CSV file.
 time_series.to_csv("time-series/India_regional_aggregated.csv", index = False)
