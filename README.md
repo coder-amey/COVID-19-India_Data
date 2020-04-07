@@ -5,7 +5,7 @@
 * These datasets have been beautifully visualized by **[@rahulrajpl](https://github.com/rahulrajpl)** on his **[dashboard]( http://randomwalk.in/covid19India/)**.
 
 ### Introduction:
-* This repository stores datasets pertaining to the daily update on the region-wise spread of COVID-19 in India.
+* This repository stores datasets pertaining to the region-wise spread of COVID-19 in India.
 * The data are arranged into two directories: *datasets* and *time-series*.
 * I thank the **[MoHFW](https://www.mohfw.gov.in/)** and **[@covid19india](https://github.com/covid19india)** for providing a reliable source of raw data.
 * I also thank each and every on-duty personnel on the frontlines of this battle against COVID-19. Let's help them by staying indoors.
