@@ -13,9 +13,10 @@
 ### Functional Details:
 * The *datasets* directory stores the daily updates in the CSV format.
 * The *time-series* directory houses the CSV file storing the region-wise trends of the COVID-19 spread in India over time.
+* The *update_scripts* directory contains the python scripts used for fetching data from their respective sources and updating the datasets accordingly.
 * All the dates are represented in *'%d-%m-%Y'* format. Use the *dayfirst = True* argument of *pandas.read_csv()* function to correctly read the dates while loading the dataset into a dataframe.
 * The *COVID19-fetch_India_regional_data.py* script scrapes the MoHFW webpage for updated data and generates/updates the corresponding files accordingly. I shall run this script daily to retrieve and record updates on the spread of COVID-19.
-* The *COVID19-fetch_India_regional_historical_data.py* script extracts old historical data from the CovidCrowd repository on GitHub. This script was used once to load the old data that was not available on the MoHFW website.
+* The *COVID19-fetch_India_regional_historical_data.py* script extracts old historical data from the CovidCrowd repository on GitHub. This script was used once to load the old data that was no longer available on the MoHFW website.
 
 ### Sources:
 * The primary source of these data is the home page of the **[Ministry of Health & Family Welfare](https://www.mohfw.gov.in/)**, Govt. of India. Daily updates are retrieved from this source since 28th March, 2020.
