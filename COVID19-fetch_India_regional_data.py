@@ -4,13 +4,13 @@ import pandas as data
 import numpy as maths
 from datetime import datetime
 
-rows = 30		#The number of rows to be fetched from the table (this may change).
+rows = 31		#The number of rows to be fetched from the table (this may change).
 date = datetime.now().strftime("%d-%m-%Y") #Date of update.
 
 #Scrape the HTML tables, load the last table, remove unwanted columns and rename and reformat the columns. Add the "National Total" row.
 tables = data.read_html("https://www.mohfw.gov.in/")
 updated_tally = tables[-1][:rows].drop("S. No.", axis = 1)
-updated_tally = updated_tally.rename(columns = {"Name of State / UT": "Region", "Total Confirmed cases (Including 66 foreign Nationals)": "Confirmed", "Cured/Discharged/Migrated": "Recovered/Migrated", "Death": "Deceased"})
+updated_tally = updated_tally.rename(columns = {"Name of State / UT": "Region", "Total Confirmed cases (Including 70 foreign Nationals)": "Confirmed", "Cured/Discharged/Migrated": "Recovered/Migrated", "Death": "Deceased"})
 updated_tally = updated_tally.astype({"Confirmed": int, "Recovered/Migrated": int, "Deceased": int})
 updated_tally = updated_tally.append(updated_tally.sum(numeric_only = True), ignore_index = True)
 updated_tally.iloc[-1, 0] = "National Total"
