@@ -915,7 +915,7 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 13-04-2020,Andhra Pradesh,432.0,11.0,7.0
 13-04-2020,Andaman and Nicobar Islands,11.0,10.0,0.0
 13-04-2020,Arunachal Pradesh,1.0,0.0,0.0
-13-04-2020,Assam,31.0,0.0,1.0
+13-04-2020,Assam,32.0,0.0,1.0
 13-04-2020,Bihar,64.0,26.0,1.0
 13-04-2020,Chandigarh,21.0,7.0,0.0
 13-04-2020,Chhattisgarh,31.0,10.0,0.0
@@ -933,7 +933,6 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 13-04-2020,Maharashtra,1985.0,217.0,149.0
 13-04-2020,Manipur,2.0,1.0,0.0
 13-04-2020,Mizoram,1.0,0.0,0.0
-13-04-2020,Nagaland,1.0,0.0,0.0
 13-04-2020,Odisha,54.0,12.0,1.0
 13-04-2020,Puducherry,7.0,1.0,0.0
 13-04-2020,Punjab,167.0,14.0,11.0
@@ -948,7 +947,7 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 14-04-2020,Andhra Pradesh,473.0,14.0,9.0
 14-04-2020,Andaman and Nicobar Islands,11.0,10.0,0.0
 14-04-2020,Arunachal Pradesh,1.0,0.0,0.0
-14-04-2020,Assam,31.0,0.0,1.0
+14-04-2020,Assam,32.0,0.0,1.0
 14-04-2020,Bihar,66.0,26.0,1.0
 14-04-2020,Chandigarh,21.0,7.0,0.0
 14-04-2020,Chhattisgarh,31.0,10.0,0.0
@@ -967,7 +966,6 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 14-04-2020,Manipur,2.0,1.0,0.0
 14-04-2020,Meghalaya,1.0,0.0,0.0
 14-04-2020,Mizoram,1.0,0.0,0.0
-14-04-2020,Nagaland,1.0,0.0,0.0
 14-04-2020,Odisha,55.0,18.0,1.0
 14-04-2020,Puducherry,7.0,1.0,0.0
 14-04-2020,Punjab,176.0,14.0,12.0
@@ -1001,7 +999,6 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 15-04-2020,Manipur,2.0,1.0,0.0
 15-04-2020,Meghalaya,1.0,0.0,0.0
 15-04-2020,Mizoram,1.0,0.0,0.0
-15-04-2020,Nagaland,0.0,0.0,0.0
 15-04-2020,Odisha,60.0,18.0,1.0
 15-04-2020,Puducherry,7.0,1.0,0.0
 15-04-2020,Punjab,176.0,14.0,12.0
