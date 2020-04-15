@@ -17,8 +17,9 @@ updated_tally = updated_tally.astype({"Confirmed": int, "Recovered/Migrated": in
 updated_tally = updated_tally.append(updated_tally.sum(numeric_only = True), ignore_index = True)
 updated_tally.iloc[-1, 0] = "National Total"
 
-#Correct the spelling error in "Telangana"
+#Correct the spelling errors in the table.
 updated_tally.loc[updated_tally.Region == "Telengana", "Region"] = "Telangana"
+updated_tally.loc[updated_tally.Region == "Nagaland#", "Region"] = "Nagaland"
 
 #Store the dataset to a CSV file.
 updated_tally.to_csv(base_dir + "datasets/India_regional_aggregated_{}.csv".format(date), index = False)
