@@ -7,7 +7,7 @@ from datetime import datetime
 
 rows = 33	#The number of rows to be fetched from the table (this may change).
 base_dir = os.path.join(os.path.dirname(__file__), "../")		#Obtain the path to the base directory for absosulte addressing.
-date = datetime.now().strftime("%d-%m-%Y") 	#Date of update.
+date = datetime.utcnow().strftime("%d-%m-%Y") 	#Date of update.
 
 #Scrape the HTML tables, load the last table, remove unwanted columns and rename and reformat the columns. Add the "National Total" row.
 tables = data.read_html("https://www.mohfw.gov.in/")
