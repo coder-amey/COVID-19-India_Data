@@ -5,7 +5,7 @@ import numpy as maths
 import os.path
 from datetime import datetime
 
-rows = 33	#The number of rows to be fetched from the table (this may change).
+rows = 32	#The number of rows to be fetched from the table (this may change).
 base_dir = os.path.join(os.path.dirname(__file__), "../")		#Obtain the path to the base directory for absosulte addressing.
 date = datetime.now().strftime("%d-%m-%Y") 	#Date of update.
 
@@ -19,7 +19,7 @@ updated_tally.iloc[-1, 0] = "National Total"
 
 #Correct the errors in the table.
 updated_tally.loc[updated_tally.Region == "Telengana", "Region"] = "Telangana"		#Correct the spelling of Telangana.
-updated_tally = updated_tally[updated_tally.Region != "Nagaland"]		#Discard the entry of Nagaland with '0' cases.
+updated_tally.loc[updated_tally.Region == "Jharkhand#", "Region"] = "Jharkhand"		#Special case of Jharkhand.
 
 #Store the dataset to a CSV file.
 updated_tally.to_csv(base_dir + "datasets/India_regional_aggregated_{}.csv".format(date), index = False)
