@@ -1407,10 +1407,10 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 27-04-2020,West Bengal,649.0,105.0,20.0
 27-04-2020,National Total,28160.0,6362.0,886.0
 28-04-2020,Andaman and Nicobar Islands,33.0,11.0,0.0
-28-04-2020,Andhra Pradesh,1183.0,235.0,31.0
+28-04-2020,Andhra Pradesh,1259.0,258.0,31.0
 28-04-2020,Arunachal Pradesh,1.0,1.0,0.0
-28-04-2020,Assam,36.0,27.0,1.0
-28-04-2020,Bihar,345.0,57.0,2.0
+28-04-2020,Assam,38.0,27.0,1.0
+28-04-2020,Bihar,346.0,57.0,2.0
 28-04-2020,Chandigarh,40.0,17.0,0.0
 28-04-2020,Chhattisgarh,37.0,32.0,0.0
 28-04-2020,Delhi,3108.0,877.0,54.0
@@ -1419,11 +1419,11 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 28-04-2020,Haryana,296.0,183.0,3.0
 28-04-2020,Himachal Pradesh,40.0,22.0,1.0
 28-04-2020,Jammu and Kashmir,546.0,164.0,7.0
-28-04-2020,Jharkhand,82.0,13.0,3.0
-28-04-2020,Karnataka,512.0,193.0,20.0
-28-04-2020,Kerala,481.0,355.0,4.0
-28-04-2020,Ladakh,20.0,14.0,0.0
-28-04-2020,Madhya Pradesh,2168.0,302.0,110.0
+28-04-2020,Jharkhand,103.0,17.0,3.0
+28-04-2020,Karnataka,520.0,198.0,20.0
+28-04-2020,Kerala,482.0,355.0,4.0
+28-04-2020,Ladakh,22.0,16.0,0.0
+28-04-2020,Madhya Pradesh,2368.0,361.0,113.0
 28-04-2020,Maharashtra,8590.0,1282.0,369.0
 28-04-2020,Manipur,2.0,2.0,0.0
 28-04-2020,Meghalaya,12.0,0.0,1.0
@@ -1436,6 +1436,6 @@ Date,Region,Confirmed,Recovered/Migrated,Deceased
 28-04-2020,Telangana,1004.0,321.0,26.0
 28-04-2020,Tripura,2.0,2.0,0.0
 28-04-2020,Uttarakhand,51.0,33.0,0.0
-28-04-2020,Uttar Pradesh,1955.0,335.0,31.0
+28-04-2020,Uttar Pradesh,2043.0,400.0,31.0
 28-04-2020,West Bengal,697.0,109.0,20.0
-28-04-2020,National Total,29435.0,6869.0,934.0
+28-04-2020,National Total,29834.0,7027.0,937.0
