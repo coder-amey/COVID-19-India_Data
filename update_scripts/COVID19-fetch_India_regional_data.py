@@ -13,15 +13,12 @@ date = datetime.now().strftime("%d-%m-%Y") 	#Date of update.
 tables = data.read_html("https://www.mohfw.gov.in/")
 updated_tally = tables[-1][:rows].drop("S. No.", axis = 1)
 updated_tally = updated_tally.rename(columns = {"Name of State / UT": "Region", "Total Confirmed cases (Including 111 foreign Nationals)": "Confirmed", "Cured/Discharged/Migrated": "Recovered/Migrated", "Death": "Deceased"})
-
-#Correct the errors in the table.
-updated_tally.loc[updated_tally.Region == "Telengana", "Region"] = "Telangana"		#Correct the spelling of Telangana.
-updated_tally.loc[updated_tally.Region == "Madhya Pradesh#", "Region"] = "Madhya Pradesh"		#Special Case.
-updated_tally.loc[updated_tally.Region == "Madhya Pradesh", "Deceased"] = 119		#Special Case.
-
 updated_tally = updated_tally.astype({"Confirmed": int, "Recovered/Migrated": int, "Deceased": int})
 updated_tally = updated_tally.append(updated_tally.sum(numeric_only = True), ignore_index = True)
 updated_tally.iloc[-1, 0] = "National Total"
+
+#Correct the errors in the table.
+updated_tally.loc[updated_tally.Region == "Telengana", "Region"] = "Telangana"		#Correct the spelling of Telangana.
 
 #Store the dataset to a CSV file.
 updated_tally.to_csv(base_dir + "datasets/India_regional_aggregated_{}.csv".format(date), index = False)
