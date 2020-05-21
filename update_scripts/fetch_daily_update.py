@@ -13,6 +13,10 @@ date = datetime.now().strftime("%d-%m-%Y") 	#Date of update.
 tables = data.read_html("https://www.mohfw.gov.in/")
 updated_tally = tables[-1][:rows].drop("S. No.", axis = 1)
 updated_tally = updated_tally.rename(columns = {"Name of State / UT": "Region", "Total Confirmed cases*": "Confirmed", "Cured/Discharged/Migrated": "Recovered/Migrated", "Deaths**": "Deceased"})
+
+#DEBUG.
+updated_tally.loc[updated_tally.Region == "Puducherry", "Deceased"] = "0"		#Correct the entry of deceased cases in Puducherry.
+
 updated_tally = updated_tally.astype({"Confirmed": int, "Recovered/Migrated": int, "Deceased": int})
 updated_tally = updated_tally.append(updated_tally.sum(numeric_only = True), ignore_index = True)
 updated_tally.iloc[-1, 0] = "National Total"
