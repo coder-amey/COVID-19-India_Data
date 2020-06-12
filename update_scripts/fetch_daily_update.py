@@ -5,7 +5,7 @@ import numpy as maths
 import os.path
 from datetime import datetime
 
-rows = 36	#The number of rows to be fetched from the table (this may change).
+rows = 35		#The number of rows to be fetched from the table (this may change).
 base_dir = os.path.join(os.path.dirname(__file__), "../")		#Obtain the path to the base directory for absosulte addressing.
 date = datetime.now().strftime("%d-%m-%Y") 	#Date of update.
 
@@ -19,15 +19,6 @@ updated_tally = updated_tally[["Region", "Confirmed", "Recovered/Migrated", "Dec
 updated_tally = updated_tally.astype({"Confirmed": int, "Recovered/Migrated": int, "Deceased": int})
 updated_tally = updated_tally.append(updated_tally.sum(numeric_only = True), ignore_index = True)
 updated_tally.iloc[-1, 0] = "National Total"
-
-#Correct the errors in the table.
-updated_tally.loc[updated_tally.Region == "Telengana", "Region"] = "Telangana"		#Correct the spelling of Telangana.
-#Merge the rows belonging to Dadra and Nagar Haveli and Daman and Diu.
-df = updated_tally[updated_tally["Region"].isin(["Daman & Diu", "Dadar Nagar Haveli"])]		#Extract entries.
-#Sum and merge the entries.
-updated_tally.loc[updated_tally.Region == "Dadar Nagar Haveli", ["Confirmed", "Recovered/Migrated", "Deceased"]] = df.sum(numeric_only = True).to_list()
-updated_tally.loc[updated_tally.Region == "Dadar Nagar Haveli", "Region"] = "Dadra and Nagar Haveli and Daman and Diu"		#Correct the spelling of DNHDD.
-updated_tally = updated_tally[updated_tally.Region != "Daman & Diu"]		#Drop the row for Daman and Diu.
 
 #Store the dataset to a CSV file.
 updated_tally.to_csv(base_dir + "datasets/India_regional_aggregated_{}.csv".format(date), index = False)
