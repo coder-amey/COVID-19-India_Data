@@ -1,37 +1,37 @@
-Region,Recovered/Migrated,Deceased,Confirmed
-Andaman and Nicobar Islands,33.0,0.0,33.0
-Andhra Pradesh,2620.0,73.0,4510.0
-Arunachal Pradesh,1.0,0.0,47.0
-Assam,547.0,4.0,2397.0
-Bihar,2425.0,30.0,4915.0
-Chandigarh,273.0,5.0,309.0
-Chhattisgarh,266.0,4.0,923.0
-Dadra and Nagar Haveli and Daman and Diu,1.0,0.0,19.0
-Delhi,10664.0,761.0,27654.0
-Goa,65.0,0.0,267.0
-Gujarat,13316.0,1219.0,19592.0
-Haryana,2134.0,24.0,3952.0
-Himachal Pradesh,194.0,5.0,400.0
-Jammu and Kashmir,1126.0,39.0,3467.0
-Jharkhand,473.0,7.0,1000.0
-Karnataka,1968.0,59.0,5213.0
-Kerala,762.0,15.0,1807.0
-Ladakh,48.0,1.0,99.0
-Madhya Pradesh,6108.0,399.0,9228.0
-Maharashtra,37390.0,2969.0,82968.0
-Manipur,52.0,0.0,157.0
-Meghalaya,13.0,1.0,33.0
-Mizoram,1.0,0.0,24.0
-Nagaland,0.0,0.0,107.0
-Odisha,1716.0,8.0,2781.0
-Puducherry,36.0,0.0,99.0
-Punjab,2092.0,50.0,2515.0
-Rajasthan,7501.0,231.0,10331.0
-Sikkim,0.0,0.0,7.0
-Tamil Nadu,16395.0,251.0,30152.0
-Telangana,1710.0,123.0,3496.0
-Tripura,173.0,0.0,747.0
-Uttarakhand,423.0,11.0,1303.0
-Uttar Pradesh,5648.0,257.0,9733.0
-West Bengal,3119.0,383.0,7738.0
-National Total,119293.0,6929.0,238023.0
+Region,Confirmed,Recovered/Migrated,Deceased
+Andaman and Nicobar Islands,33.0,33.0,0.0
+Andhra Pradesh,4510.0,2620.0,73.0
+Arunachal Pradesh,47.0,1.0,0.0
+Assam,2397.0,547.0,4.0
+Bihar,4915.0,2425.0,30.0
+Chandigarh,309.0,273.0,5.0
+Chhattisgarh,923.0,266.0,4.0
+Dadra and Nagar Haveli and Daman and Diu,19.0,1.0,0.0
+Delhi,27654.0,10664.0,761.0
+Goa,267.0,65.0,0.0
+Gujarat,19592.0,13316.0,1219.0
+Haryana,3952.0,2134.0,24.0
+Himachal Pradesh,400.0,194.0,5.0
+Jammu and Kashmir,3467.0,1126.0,39.0
+Jharkhand,1000.0,473.0,7.0
+Karnataka,5213.0,1968.0,59.0
+Kerala,1807.0,762.0,15.0
+Ladakh,99.0,48.0,1.0
+Madhya Pradesh,9228.0,6108.0,399.0
+Maharashtra,82968.0,37390.0,2969.0
+Manipur,157.0,52.0,0.0
+Meghalaya,33.0,13.0,1.0
+Mizoram,24.0,1.0,0.0
+Nagaland,107.0,0.0,0.0
+Odisha,2781.0,1716.0,8.0
+Puducherry,99.0,36.0,0.0
+Punjab,2515.0,2092.0,50.0
+Rajasthan,10331.0,7501.0,231.0
+Sikkim,7.0,0.0,0.0
+Tamil Nadu,30152.0,16395.0,251.0
+Telangana,3496.0,1710.0,123.0
+Tripura,747.0,173.0,0.0
+Uttarakhand,1303.0,423.0,11.0
+Uttar Pradesh,9733.0,5648.0,257.0
+West Bengal,7738.0,3119.0,383.0
+National Total,238023.0,119293.0,6929.0
