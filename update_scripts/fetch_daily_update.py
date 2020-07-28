@@ -22,6 +22,7 @@ updated_tally.iloc[-1, 0] = "National Total"
 
 #Correct the errors in the table.
 #updated_tally.loc[updated_tally.Region == "Telangana***", "Region"] = "Telangana"		#Correct the spelling of Telangana.
+updated_tally = updated_tally[updated_tally.Region != "Lakshadweep"]			#Remove the empty record of Lakshadweep.
 
 #Store the dataset to a CSV file.
 updated_tally.to_csv(base_dir + "datasets/India_regional_aggregated_{}.csv".format(date), index = False)
