@@ -22,7 +22,6 @@ updated_tally.iloc[-1, 0] = "National Total"
 
 #Correct the errors in the table.
 updated_tally.loc[updated_tally.Region == "Telengana", "Region"] = "Telangana"		#Correct the spelling of Telangana.
-updated_tally = updated_tally[updated_tally.Region != "Lakshadweep"]			#Remove the empty record of Lakshadweep.
 
 for region in [region for region in updated_tally.Region if '*' in region]:		#Remove the special annotations.
 	updated_tally.loc[updated_tally.Region == region, "Region"] = ''.join(char for char in region if char != '*')	
