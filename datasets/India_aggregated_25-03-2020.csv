@@ -1,0 +1,28 @@
+Region,Confirmed,Recovered,Deceased
+Andhra Pradesh,10.0,0.0,0.0
+Bihar,4.0,0.0,1.0
+Chandigarh,7.0,0.0,0.0
+Chhattisgarh,3.0,0.0,0.0
+Delhi,35.0,3.0,1.0
+Goa,3.0,0.0,0.0
+Gujarat,38.0,0.0,2.0
+Haryana,31.0,0.0,0.0
+Himachal Pradesh,3.0,1.0,1.0
+Jammu and Kashmir,11.0,0.0,1.0
+Karnataka,51.0,3.0,1.0
+Kerala,118.0,11.0,0.0
+Ladakh,13.0,0.0,0.0
+Madhya Pradesh,15.0,0.0,1.0
+Maharashtra,122.0,2.0,2.0
+Manipur,1.0,0.0,0.0
+Mizoram,1.0,0.0,0.0
+Odisha,2.0,0.0,0.0
+Puducherry,1.0,0.0,0.0
+Punjab,31.0,0.0,1.0
+Rajasthan,38.0,3.0,0.0
+Tamil Nadu,26.0,1.0,1.0
+Telangana,41.0,1.0,0.0
+Uttar Pradesh,38.0,2.0,0.0
+Uttarakhand,5.0,1.0,0.0
+West Bengal,9.0,0.0,1.0
+National Total,657.0,28.0,13.0

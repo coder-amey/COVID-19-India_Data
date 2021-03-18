@@ -16,7 +16,7 @@ def init_bucket(frame, date, region):
 def generate_dataset(record):
 	'''Generate a dataframe from an existing record.'''
 	rows = [[region] + tally for region, tally in record.items()]
-	df = data.DataFrame(data = rows, columns = ["Region", "Confirmed", "Recovered/Migrated", "Deceased"])
+	df = data.DataFrame(data = rows, columns = ["Region", "Confirmed", "Recovered", "Deceased"])
 	df = df.sort_values(by = "Region")
 	df = df.append(df.sum(numeric_only = True), ignore_index = True)
 	df.iloc[-1, 0] = "National Total"
@@ -62,14 +62,14 @@ if __name__ == "__main__":
 		#Generate dataframe of daily records from the aggregate entries.
 		daily_record = generate_dataset(aggregate_sum)
 		#Store the daily records as CSV files.
-		daily_record.to_csv(base_dir + "datasets/India_regional_aggregated_{}.csv".format(date.strftime('%d-%m-%Y')), index = False)
+		daily_record.to_csv(base_dir + "datasets/India_aggregated_{}.csv".format(date.strftime('%d-%m-%Y')), index = False)
 		if(date < cut_off):		#Do not process records after the cut-off date.
 			#Add a date column and assimilate the records into a time_series dataframe with historical data.
 			daily_record.insert(0, "Date", date.strftime('%d-%m-%Y'))	
 			time_series = time_series.append(daily_record, ignore_index = True)	
 	
 	#Load the new time-series from its CSV file.
-	time_series = data.concat([time_series, data.read_csv(base_dir + "time-series/India_regional_aggregated.csv")], ignore_index = True)
+	time_series = data.concat([time_series, data.read_csv(base_dir + "time-series/India_aggregated.csv")], ignore_index = True)
 	
 	#Write the updated time-series to its CSV file.
-	time_series.to_csv(base_dir + "time-series/India_regional_aggregated.csv", index = False)
+	time_series.to_csv(base_dir + "time-series/India_aggregated.csv", index = False)
