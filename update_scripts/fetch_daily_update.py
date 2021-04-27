@@ -21,7 +21,7 @@ updated_tally = updated_tally.append(updated_tally.sum(numeric_only = True), ign
 updated_tally.iloc[-1, 0] = "National Total"
 
 #Correct the errors in the table.
-updated_tally.loc[updated_tally.Region == "Telengana", "Region"] = "Telangana"		#Correct the spelling of Telangana.
+#updated_tally.loc[updated_tally.Region == "Telengana", "Region"] = "Telangana"
 
 for region in [region for region in updated_tally.Region if '*' in region]:		#Remove the special annotations.
 	updated_tally.loc[updated_tally.Region == region, "Region"] = ''.join(char for char in region if char != '*')	
