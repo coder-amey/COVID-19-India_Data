@@ -6,7 +6,7 @@ import os.path
 from datetime import datetime
 
 base_dir = os.path.join(os.path.dirname(__file__), "../")		#Obtain the path to the base directory for absosulte addressing.
-date = datetime.strptime('21-04-2022', '%d-%m-%Y').strftime("%d-%m-%Y")		#Date of update.
+date = datetime.strptime('05-05-2022', '%d-%m-%Y').strftime("%d-%m-%Y")		#Date of update.
 
 #Tabulate the JSON data. Remove unwanted columns and rename the rest. Drop the final total.
 updated_tally = data.read_json('https://www.mohfw.gov.in/data/datanew.json', orient = 'records')
