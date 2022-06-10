@@ -1,8 +1,12 @@
+from datetime import datetime, timedelta
+import json
 import pandas as data
 import os.path
-from datetime import datetime
+import urllib.request
 
-cut_off = datetime.strptime('28-03-2020', '%d-%m-%Y').date()	#Extract historical data till this date.
+# [start, ..., cut_off)
+start = datetime.strptime('02-06-2022', '%d-%m-%Y').date()	#Extract historical data from this date (inclusive).
+cut_off = datetime.strptime('10-06-2022', '%d-%m-%Y').date()	#Extract historical data till this date (exclusive).
 base_dir = os.path.join(os.path.dirname(__file__), "../")		#Obtain the path to the base directory for absosulte addressing.
 
 def init_bucket(frame, date, region):
@@ -25,51 +29,42 @@ def generate_dataset(record):
 increments = dict()		#Increments in cases per day bucketted over regions.
 
 #Load historical data.
-patients_dataset = data.read_csv("https://raw.githubusercontent.com/covid19india/CovidCrowd/master/data/raw_data.csv", parse_dates = ['Date Announced', 'Status Change Date'], dayfirst = True)
+with urllib.request.urlopen("https://data.covid19bharat.org/v4/min/timeseries.min.json") as url:
+	historical_data = json.loads(url.read().decode())
 
 #Initialize the time-series.
 time_series = data.DataFrame()
 
 if __name__ == "__main__":
-	#Clean and transform the data.
-	patients_dataset = patients_dataset[['Date Announced', 'Detected State', 'Current Status', 'Status Change Date']]
-	patients_dataset = patients_dataset.rename(columns = {'Date Announced': 'Date', 'Detected State': 'Region', 'Current Status': 'Status', 'Status Change Date': 'Change_Date'})
-	patients_dataset = patients_dataset.dropna(subset = ['Date', 'Region', 'Status'])
+	#Transform the data into a date-wise tally.
+	datewise_tally = dict()
+	dates = [start +timedelta(days=x) for x in range((cut_off - start).days)]
+	state_codes = {'AN': 'Andaman and Nicobar Islands', 'AP': 'Andhra Pradesh', 'AR': 'Arunachal Pradesh', 'AS': 'Assam',
+						'BR': 'Bihar', 'CH': 'Chandigarh', 'CT': 'Chhattisgarh', 'DN': 'Dadra and Nagar Haveli and Daman and Diu',
+						'DL': 'Delhi', 'GA': 'Goa', 'GJ': 'Gujarat', 'HR': 'Haryana', 'HP': 'Himachal Pradesh', 'JK': 'Jammu and Kashmir',
+						'JH': 'Jharkhand', 'KA': 'Karnataka', 'KL': 'Kerala', 'LA': 'Ladakh', 'LD': 'Lakshadweep', 'MP': 'Madhya Pradesh',
+						'MH': 'Maharashtra', 'MN': 'Manipur', 'ML': 'Meghalaya', 'MZ': 'Mizoram', 'NL': 'Nagaland', 'OR': 'Odisha',
+						'PY': 'Puducherry', 'PB': 'Punjab', 'RJ': 'Rajasthan', 'SK': 'Sikkim', 'TN': 'Tamil Nadu', 'TG': 'Telangana', 'TR': 'Tripura',
+						'UT': 'Uttarakhand', 'UP': 'Uttar Pradesh', 'WB': 'West Bengal'}
 
-	#Generate a dictionary of date-wise recoded cases from the extracted data.
-	for index, row in patients_dataset.iterrows():
-		#Prepare values.
-		date = row[0]
-		region = row[1]
-		status = row[2]
-		change_date = row[3]
-		init_bucket(increments, date, region)
-	
-		increments[date][region][0] += 1	#Increment confirmed cases.
+	#Generate date-wise records from the extracted data. Append them to the time-series.
+	for date in dates:
 
-		if(status != 'Hospitalized'):
-			init_bucket(increments, change_date, region)
-			if((status == 'Recovered') or (status == 'Migrated')):
-				increments[change_date][region][1] += 1	#Increment recovered cases.
-			else:
-				increments[change_date][region][2] += 1	#Increment deceased cases.
+		for state_code, state in state_codes.items():
+			init_bucket(datewise_tally, date, state)
+			record = historical_data[state_code]['dates'][date.strftime("%Y-%m-%d")]["total"]
+			datewise_tally[date][state] = [record['confirmed'], record['recovered'], record['deceased']]
+		daily_record = generate_dataset(datewise_tally[date])
 
-	#Convert the list of daily increments into an aggregate tally.
-	aggregate_sum = dict()
-	for date, daily_increment in sorted(increments.items()):
-		for region, new_cases in daily_increment.items():
-			aggregate_sum[region] =[new_cases[i] + aggregate_sum.get(region, [0, 0, 0])[i] for i in range(3)]		#Add this day's respective new cases to the total cases so far.
-		#Generate dataframe of daily records from the aggregate entries.
-		daily_record = generate_dataset(aggregate_sum)
 		#Store the daily records as CSV files.
 		daily_record.to_csv(base_dir + "datasets/India_aggregated_{}.csv".format(date.strftime('%d-%m-%Y')), index = False)
-		if(date < cut_off):		#Do not process records after the cut-off date.
-			#Add a date column and assimilate the records into a time_series dataframe with historical data.
-			daily_record.insert(0, "Date", date.strftime('%d-%m-%Y'))	
-			time_series = time_series.append(daily_record, ignore_index = True)	
+
+		#Add a date column and assimilate the records into a time_series dataframe with historical data.
+		daily_record.insert(0, "Date", date.strftime('%d-%m-%Y'))
+		time_series = time_series.append(daily_record, ignore_index = True)
 	
 	#Load the new time-series from its CSV file.
-	time_series = data.concat([time_series, data.read_csv(base_dir + "time-series/India_aggregated.csv")], ignore_index = True)
+	time_series = data.concat([data.read_csv(base_dir + "time-series/India_aggregated.csv"), time_series], ignore_index = True)
 	
 	#Write the updated time-series to its CSV file.
 	time_series.to_csv(base_dir + "time-series/India_aggregated.csv", index = False)
